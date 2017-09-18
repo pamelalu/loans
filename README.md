@@ -8,18 +8,18 @@ An input data set will consist of four CSV files, describing the facilities, ban
 
 facilities.csv
 
-| Field  | Type | Description |
-| ------------- | ------------- |
-| bank_id  | integer  | The ID of the bank providing this facility. |
-| facility_id  | integer  | The ID of the facility. |
-| interest_rate | float | Between 0 and 1; the interest rate of this facility. |
-| amount | integer | The total capacity of the facility in cents. |
+Field  | Type | Description 
+------ | ---- | ---------
+bank_id  | integer  | The ID of the bank providing this facility. 
+facility_id  | integer  | The ID of the facility. 
+interest_rate | float | Between 0 and 1; the interest rate of this facility. 
+amount | integer | The total capacity of the facility in cents. 
 
 
 banks.csv
 
 | Field  | Type | Description |
-| ------------- | ------------- |
+| ------ | ---- | ---------|
 | bank_id  | integer  | The ID of the bank. |
 | bank_name  | string  | The name of the bank. |
     
@@ -27,7 +27,7 @@ banks.csv
 covenants.csv
 
 | Field  | Type | Description |
-| ------------- | ------------- |
+| ------ | ---- | ---------|
 | bank_id  | integer  | The ID of the bank requiring this covenant. |
 | facility_id  | integer  | If present, denotes that this covenant applies to the facility with this ID; otherwise, this covenant applies to all of the bank’s facilities. |
 | max_default_likelihood | float | If present, specifies the maximum allowed default rate for loans in the facility (or in the bank’s facilities). |
@@ -38,7 +38,7 @@ covenants.csv
 loans.csv
 
 | Field  | Type | Description |
-| ------------- | ------------- |
+| ------ | ---- | ---------|
 | id  | integer  | The ID of the loan. Strictly increasing. |
 | amount  | integer  | The size of the loan in cents. |
 | interest_rate | float | Between 0 and 1; the interest rate of the loan. In this simplified model, the amount of money we earn from a loan (if it doesn’t default) is amount * interest_rate.|
