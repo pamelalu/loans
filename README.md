@@ -60,13 +60,13 @@ Unfunded loans are ignored by our system ­­ they will earn no interest, nor wi
 assignments.csv
 
 | Field  | Type | Description |
-| ------------- | ------------- |
+| ------ | ---- | ---------|
 | loan_id  | integer  | The ID of the loan. |
 | facility_id  | integer  | If the loan is funded, the ID of its facility; otherwise, empty. |
 
 yields.csv
 
 | Field  | Type | Description |
-| ------------- | ------------- |
+| ------ | ---- | ---------|
 | facility_id  | integer  | The ID of the facility. 
 | expected_yield  | integer  | The expected yield of the facility, rounded to the nearest cent.|
